@@ -1,0 +1,93 @@
+package usar_persona;
+
+public class Persona {
+
+    private int edad = 10;
+    private char sexo = 'M';
+    private String raza = "Asiatica";
+    private int Celular = 555555444;
+    String Color_pelo = "Rubia";
+    String Color_ojos = "Negros";
+    boolean Soltera = true;
+
+    public Persona() {
+        int edad;
+        char sexo;
+        String raza;
+        int Celular;
+        String Color_pelo;
+        String Color_ojos;
+        boolean Soltera;
+    }
+    
+    public int Mostrar_Edad() {
+        return edad;
+    }
+    
+    public String Cambia_Edad(int Valor) {// metodo setter que permite modificar el valor de una variable
+        edad = Valor;
+        String mensaje = "La edad se ha cambiado por " + edad;
+        return mensaje;
+    }
+    
+    
+    public char Mostrar_Sexo(){
+        return sexo;
+        
+    }
+    public String Cambiar_Sexo(char Valor){
+        sexo= Valor;
+        String mensaje = "El sexo se ha modificado por" + sexo;
+        return mensaje;
+    }
+    
+    public String Mostrar_Raza(){
+        return raza;
+    }
+    
+    public String Cambiar_Raza(String Valor){
+        raza = Valor;
+        String mensaje = "La raza se ha modificado por " + raza;
+        return mensaje;
+    }
+    
+    public int Mostrar_Celular(){
+        return Celular;
+    }
+    
+    public String Cambiar_Celular(int Valor){
+        Celular = Valor;
+        String mensaje = "El numero de Celular se ha cambiado por " + Celular;
+        return mensaje;
+    }
+    
+    public String Mostrar_ColorPelo(){
+        return Color_pelo;
+    }
+    
+    public String Cambiar_Colorpelo(String Valor){
+        Color_pelo = Valor;
+        String mensaje = "El pelo se ha cambiado por " + Color_pelo;
+        return mensaje;
+    }
+    
+    public String Mostrar_ColorOjo(){
+        return Color_ojos;
+    }
+    
+    public String Cambiar_ColorOjos(String Valor){
+        Color_ojos = Valor;
+        String mensaje = "El color de ojos se ha cambiado por " + Color_ojos;
+        return mensaje;
+    }
+
+    public boolean Mostrar_Soltera() {
+        return Soltera;
+    }
+
+    public String CambiarSoltera(boolean Valor) {
+        Soltera = Valor;
+        String mensaje = "Su estado ha cambiado por " + Soltera;
+        return mensaje;
+    }
+}
